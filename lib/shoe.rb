@@ -11,7 +11,10 @@ class Shoe
   
   def brand=(brand)
     @brand = brand 
-   BRANDS.include?(@brands) ?  puts : BRANDS << brand
+   if BRANDS.include?(@brands)
+     
+    else
+      BRANDS << brand
   end
 
   def cobble
