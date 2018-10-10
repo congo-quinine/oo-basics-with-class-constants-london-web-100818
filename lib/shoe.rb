@@ -7,8 +7,8 @@ class Shoe
   def initialize(brand)
     @brand = brand
     
-       if BRANDS.include?(@brand)
-     
+    if BRANDS.include?(@brand)
+      puts "exists in the array"
     else
       BRANDS << brand
     end 
@@ -18,7 +18,7 @@ class Shoe
   def brand=(brand)
     @brand = brand 
    if BRANDS.include?(@brand)
-     
+     puts "exists in the array"
     else
       BRANDS << brand
     end  
